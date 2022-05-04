@@ -3,12 +3,12 @@
 Miriio es una pequeña red social y PWA para que los usuarios compartan las ideas
 que desean. Puedes ver la aplicación [aquí](https://miriio.vercel.app/ 'aquí').
 
-[![Miriio](https://dav-dev.com/assets/projects/miriio.jpg 'Miriio')](https://dav-dev.com/assets/projects/miriio.jpg 'Miriio')
+[![Miriio](https://photos.app.goo.gl/cDUK6MTuaYRTcsWZ7'Miriio')](https://dav-dev.com/assets/projects/miriio.jpg 'Miriio')
 
 ## Backend
 
 El backend de este sitio lo puedes ver en este
-[repositorio](https://github.com/jonathangg03/social-media-backend 'repositorio').
+[repositorio](https://github.com/blk-das/red.git).
 
 ## Instrucciones de uso
 
@@ -59,4 +59,4 @@ El backend de este sitio lo puedes ver en este
 - Iniciar el proyecto con el comando "npm run dev".
 - Tenemos que tener el backend corriendo en el puerto 3001 (o el que hayamos
   definido en las variables de entorno), para ello, ver el
-  [repositorio](https://github.com/jonathangg03/social-media-backend 'repositorio').
+  [repositorio](https://github.com/blk-das/red.git).
