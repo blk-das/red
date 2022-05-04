@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.result {
+  display: flex;
+  align-items: center;
+  a {
+    display: flex;
+    margin-bottom: 25px;
+    height: 51px;
+    text-decoration: none;
+  }
+  img {
+    height: 100%;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  h3 {
+    margin-left: 9px;
+    font-weight: 600;
+    font-size: 2rem;
+    color: $acentuation;
+    font-family: $fontHeaders;
+  }
+}

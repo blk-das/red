@@ -1,0 +1,88 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.newIdeaForm {
+  width: 100%;
+  &__image {
+    width: 100%;
+    height: 187px;
+    margin-bottom: 20px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &-cover {
+      background-color: black;
+      color: white;
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      top: 10px;
+      right: 10px;
+      font-size: 20px;
+    }
+  }
+
+  textarea {
+    resize: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 258px;
+    margin-bottom: 15px;
+    background-color: white;
+    padding: 12px 23px;
+    font-family: $fontParagraph;
+    font-size: 1.6rem;
+    border: 3px solid transparent;
+    box-shadow: -1px 1px 5px 3px #0000000d;
+    border-radius: 23px;
+  }
+
+  textarea::placeholder {
+    color: black;
+  }
+
+  input[type='file'] {
+    margin-bottom: 15px;
+    visibility: hidden;
+  }
+
+  .newIdeaForm__imageInput::-webkit-file-upload-button {
+    visibility: hidden;
+  }
+
+  .newIdeaForm__imageInput::before {
+    content: '+ Agregar una imagen';
+    font-size: 1.6rem;
+    color: $acentuation;
+    font-family: $fontParagraph;
+    font-weight: 600;
+    border: none;
+    background-color: transparent;
+    visibility: initial;
+  }
+
+  button {
+    @include mainButton();
+  }
+
+  button[disabled] {
+    background-color: $main200;
+  }
+
+  &__pictureActivator.active {
+    display: none;
+  }
+
+  .dragging {
+    border: 3px dashed $acentuation;
+  }
+}

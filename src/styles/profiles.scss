@@ -1,0 +1,57 @@
+@import './variables.scss';
+@import './mixins.scss';
+
+.profile {
+  padding-bottom: 50px;
+  &__follow-button {
+    margin: 0 auto;
+    display: block;
+    @include mainButton($width: 191px, $height: 50px, $fontSize: 1.6rem);
+  }
+
+  &__follow-button.followed {
+    @include mainButton(
+      $width: 191px,
+      $height: 50px,
+      $fontSize: 1.6rem,
+      $border: 3px solid $main,
+      $bgColor: white,
+      $color: $main
+    );
+  }
+
+  &__follow-button[disabled] {
+    border: 1px solid transparent;
+    background-color: $main200;
+    color: white;
+  }
+  &__ellipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &__ellipsed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .profile {
+    width: calc(100% - 68px);
+    &__ellipsed {
+      display: initial;
+      position: fixed;
+      top: 0;
+      z-index: -1;
+    }
+
+    &__ellipsed.a {
+      top: 20%;
+    }
+
+    &__ellipsed.b {
+      right: 0;
+    }
+  }
+}

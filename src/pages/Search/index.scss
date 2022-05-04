@@ -1,0 +1,51 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.Search {
+  h2 {
+    font-size: 2.4rem;
+    font-family: $fontHeaders;
+    font-weight: 600;
+    margin: 17px 0 35px;
+    padding: 0 25px;
+  }
+
+  &__error {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: red;
+    padding: 0 25px;
+    margin-top: -25px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Search {
+    &__results {
+      a {
+        display: flex;
+        margin-bottom: 25px;
+        height: 51px;
+        max-width: 600px;
+      }
+      li {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        img {
+          height: 100%;
+          width: 50px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+        h3 {
+          margin-left: 9px;
+          font-weight: 600;
+          font-size: 2rem;
+          color: $acentuation;
+          font-family: $fontHeaders;
+        }
+      }
+    }
+  }
+}

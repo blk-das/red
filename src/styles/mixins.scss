@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+@mixin darkShadow($color: rgba(0, 0, 0, 0.28)) {
+  box-shadow: 1px 3px 5px 1px $color;
+  -webkit-box-shadow: 1px 3px 5px 1px $color;
+  -moz-box-shadow: 1px 3px 5px 1px $color;
+}
+
+@mixin mainButton(
+  $width: 100%,
+  $bgColor: $main,
+  $color: white,
+  $height: 55px,
+  $border: none,
+  $fontSize: 2rem
+) {
+  background-color: $bgColor;
+  border: $border;
+  border-radius: 50px;
+  color: $color;
+  font-family: $fontHeaders;
+  font-size: $fontSize;
+  height: $height;
+  margin-bottom: 18px;
+  width: $width;
+}

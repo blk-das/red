@@ -1,0 +1,49 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.NotFound {
+  padding: 20px;
+
+  h2 {
+    font-family: $fontHeaders;
+    font-size: 3.2rem;
+    line-height: 160%;
+    margin-top: 8px;
+    text-align: center;
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .elipse {
+    position: absolute;
+    z-index: -1;
+  }
+  .a {
+    left: 0;
+    top: 0;
+  }
+  .b {
+    right: 0;
+    top: 45%;
+  }
+  .c {
+    left: 0%;
+    top: 80%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .NotFound {
+    max-width: 630px;
+    margin: 20px auto 0;
+  }
+}

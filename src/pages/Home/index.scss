@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.Home {
+  padding-bottom: 42px;
+  &__profilePicture {
+    position: absolute;
+    top: 11px;
+    right: 23px;
+    width: 75px;
+    height: 75px;
+    img {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Home {
+    width: calc(100% - 68px);
+    &__profilePicture {
+      img {
+        display: none;
+      }
+    }
+  }
+}

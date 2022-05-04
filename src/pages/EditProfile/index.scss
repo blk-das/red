@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+
+.editProfile {
+  padding: 26px 0;
+
+  .ellipse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  &__ellipsed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .editProfile {
+    width: calc(100% - 68px);
+    max-width: 630px;
+    margin: 0 auto;
+    .ellipse {
+      display: none;
+    }
+    &__ellipsed {
+      display: initial;
+      position: absolute;
+      top: 0;
+      z-index: -1;
+    }
+
+    &__ellipsed.a {
+      top: 20%;
+    }
+
+    &__ellipsed.b {
+      right: 0;
+    }
+  }
+}

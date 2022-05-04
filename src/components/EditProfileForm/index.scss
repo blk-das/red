@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+
+.editProfileForm {
+  margin-top: 76px;
+  padding: 0 23px;
+  &-item {
+    width: 120px;
+    height: 120px;
+    margin: 0 auto 38px;
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .editProfileForm__file-input {
+      position: absolute;
+      top: 0;
+      left: 0;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      color: transparent;
+    }
+
+    .editProfileForm__file-input.cover {
+      border-radius: 0;
+    }
+
+    .editProfileForm__file-input::-webkit-file-upload-button {
+      visibility: hidden;
+    }
+
+    &-camera {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.445);
+      position: absolute;
+      top: 0;
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      font-size: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    &-camera.cover {
+      border-radius: 0;
+    }
+  }
+
+  &-item.cover {
+    width: 100%;
+    height: 207px;
+    img {
+      border-radius: 0;
+    }
+  }
+
+  input {
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $gray200;
+    padding-bottom: 8px;
+    font-family: $fontParagraph;
+    font-size: 1.6rem;
+    font-weight: 400;
+    outline: none;
+    margin-bottom: 26px;
+  }
+
+  input::placeholder {
+    font-family: $fontParagraph;
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: black;
+  }
+  button {
+    margin-top: 13px;
+    @include mainButton();
+  }
+
+  &__error {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: red;
+  }
+}

@@ -1,0 +1,65 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.main {
+  padding: 39px 31px;
+  header {
+    h1 {
+      font-family: $fontHeaders;
+      font-size: 3.2rem;
+      line-height: 160%;
+      margin-top: 8px;
+      text-align: center;
+    }
+  }
+  &__buttons {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 175px);
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
+    button {
+      @include mainButton();
+    }
+  }
+
+  .elipse {
+    position: absolute;
+    z-index: -1;
+  }
+  .a {
+    left: 0;
+    top: 0;
+  }
+  .b {
+    right: 0;
+    top: 45%;
+  }
+  .c {
+    left: 0%;
+    top: 70%;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .main {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    header {
+      width: 45%;
+      h1 {
+        font-size: 4rem;
+        text-align: left;
+      }
+    }
+    &__buttons {
+      height: auto;
+      width: 45%;
+      max-width: 680px;
+      margin: initial;
+    }
+  }
+}

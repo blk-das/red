@@ -1,0 +1,35 @@
+.Layout {
+  // padding: 19px 25px;
+  padding: 19px 0;
+  &__ellipse {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+  }
+  &__ellipsed {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .Layout {
+    &__ellipse {
+      display: none;
+    }
+    &__ellipsed {
+      display: initial;
+      position: fixed;
+      top: 0;
+      z-index: -1;
+    }
+
+    &__ellipsed.a {
+      top: 20%;
+    }
+
+    &__ellipsed.b {
+      right: 0;
+    }
+  }
+}

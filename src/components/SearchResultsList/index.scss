@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+.results {
+  padding: 0 25px;
+  h4 {
+    font-family: $fontHeaders;
+    font-weight: 600;
+    font-size: 2rem;
+    margin-bottom: 22px;
+  }
+}
