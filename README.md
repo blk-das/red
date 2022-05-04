@@ -8,7 +8,7 @@ https://photos.google.com/share/AF1QipPA3u3c0mdtSuXLooItOOk1OYIeA52z7zxbnxv8roVs
 ## Backend
 
 El backend de este sitio lo puedes ver en este
-[repositorio](https://github.com/blk-das/red.git).
+[repositorio](https://github.com/blk-das/red/tree/master).
 
 ## Instrucciones de uso
 
@@ -59,4 +59,4 @@ El backend de este sitio lo puedes ver en este
 - Iniciar el proyecto con el comando "npm run dev".
 - Tenemos que tener el backend corriendo en el puerto 3001 (o el que hayamos
   definido en las variables de entorno), para ello, ver el
-  [repositorio](https://github.com/blk-das/red.git).
+  [repositorio](https://github.com/blk-das/red/tree/master).
